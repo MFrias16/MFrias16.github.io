@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversores de Unidades</title>
+  <link rel="stylesheet" href="stylo.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Conversores de Unidades de Tiempo y Datos</h1>
+
+    <!-- Conversor de Tiempo -->
+    <section id="time-converter">
+      <h2>Conversor de Tiempo</h2>
+      <div class="input-group">
+        <label for="time-value">Valor:</label>
+        <input type="number" id="time-value" placeholder="Ingrese el valor">
+      </div>
+      
+      <div class="input-group">
+        <label for="time-from">De:</label>
+        <select id="time-from">
+          <option value="hours">Horas</option>
+          <option value="minutes">Minutos</option>
+          <option value="seconds">Segundos</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="time-to">A:</label>
+        <select id="time-to">
+          <option value="hours">Horas</option>
+          <option value="minutes">Minutos</option>
+          <option value="seconds">Segundos</option>
+        </select>
+      </div>
+
+      <button class="convert-btn" onclick="convertTime()">Convertir</button>
+      <p id="time-result" class="result">Resultado: -</p>
+    </section>
+
+    <!-- Conversor de Datos -->
+    <section id="data-converter">
+      <h2>Conversor de Datos</h2>
+      <div class="input-group">
+        <label for="data-value">Valor:</label>
+        <input type="number" id="data-value" placeholder="Ingrese el valor">
+      </div>
+
+      <div class="input-group">
+        <label for="data-from">De:</label>
+        <select id="data-from">
+          <option value="bits">bits</option>
+          <option value="bytes">bytes</option>
+          <option value="Kbps">Kbps</option>
+          <option value="Mbps">Mbps</option>
+          <option value="Gbps">Gbps</option>
+          <option value="KB">KB</option>
+          <option value="MB">MB</option>
+          <option value="GB">GB</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <label for="data-to">A:</label>
+        <select id="data-to">
+          <option value="bits">bits</option>
+          <option value="bytes">bytes</option>
+          <option value="Kbps">Kbps</option>
+          <option value="Mbps">Mbps</option>
+          <option value="Gbps">Gbps</option>
+          <option value="KB">KB</option>
+          <option value="MB">MB</option>
+          <option value="GB">GB</option>
+        </select>
+      </div>
+
+      <button class="convert-btn" onclick="convertData()">Convertir</button>
+      <p id="data-result" class="result">Resultado: -</p>
+    </section>
+  </div>
+  <script src="funcional.js"></script>
+</body>
+</html>
